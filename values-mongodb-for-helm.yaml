@@ -1,0 +1,10 @@
+architecture: replicaset
+replicaSet:
+    enabled: true
+    replicaCount: 3
+persistence:
+    storageClass: "standard"
+    size: "1Gi"
+    accessMode: ReadWriteOnce
+auth:
+    rootPassword: secret-root-pwd
